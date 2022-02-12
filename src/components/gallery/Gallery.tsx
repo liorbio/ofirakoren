@@ -3,14 +3,35 @@ import ContentPaper from '../UI/ContentPaper';
 import TextRenderer from '../UI/TextRenderer';
 import classes from './Gallery.module.css';
 import * as data from '../../texts/theWorkflow.json';
+import photo1 from '../../NotMine.png';
+import ProjectThumbnail from './ProjectThumbnail';
 const text = data;
+
+// take array of projects:
+// project: { id, name, coverPhoto }
+const projects = [
+    {
+        id: 1,
+        name: "Ramat Gan",
+        coverPhoto: photo1
+    },
+    {
+        id: 2,
+        name: "Ramat Gan",
+        coverPhoto: photo1
+    },
+    {
+        id: 3,
+        name: "Ramat Gan",
+        coverPhoto: photo1
+    }
+];
 
 const Gallery: React.FC = () => {
     return(
-        <ContentPaper injectedStyle={{ marginTop: '3em' }} className={classes.content}>
-            <h1>{text.englishTitle}</h1>
-            <p><TextRenderer text={text.englishText} /></p>
-        </ContentPaper>
+        <div className={classes.flexContainer}>
+            {projects.map(project => <ProjectThumbnail key={project.id} name={project.name} coverPhoto={project.coverPhoto} />)}
+        </div>
     )
 };
 

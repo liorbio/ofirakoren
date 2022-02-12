@@ -4,7 +4,7 @@ import classes from './GalleryPage.module.css';
 
 const GalleryPage: React.FC = () => {
     return (
-        <div style={{ backgroundImage: `url(${bgPhoto})` }} className={classes.bg}>
+        <div className={classes.bg}>
             <Gallery />
         </div>
     )
