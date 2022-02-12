@@ -1,0 +1,9 @@
+.bg { 
+    height: calc(100vh - 3.1em); /* 3.1em is the TopBar height */
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: contain;
+}

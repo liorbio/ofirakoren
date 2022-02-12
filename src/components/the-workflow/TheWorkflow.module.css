@@ -1,0 +1,14 @@
+.content {
+    font-family: 'Jost', 'sans-serif';
+    text-align: left;
+    padding: 1.3em;
+    max-width: 780px; /* Be 100% window width if smaller than 780px+2.6em. If larger, stay this width and stay centered */
+    line-height: 1.7;
+}
+.content h1 {
+    font-weight: 300;
+    margin: 0;
+}
+.content p {
+    font-weight: 200;
+}

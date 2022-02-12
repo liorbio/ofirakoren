@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
+import TheWorkflow from './components/the-workflow/TheWorkflow';
+import TopBar from './components/top-bar/TopBar';
+import GalleryPage from './pages/GalleryPage';
+import WorkflowPage from './pages/WorkflowPage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar />
+       
+      <Routes>
+        {/*
+        <Route path="/about" element={} />*/}
+        <Route path="/workflow" element={<WorkflowPage />} />
+        {/*
+        <Route path="/contact" element={} />
+        */}
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="*" element={<Navigate replace to='/gallery' />} />
+      </Routes>
+      
     </div>
   );
 }
 
 export default App;
+

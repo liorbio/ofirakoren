@@ -1,0 +1,28 @@
+.topbar {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    font-family: "Jost", "sans-serif";
+    height: 3.1em;
+    background-image: url("../../../public/YellowDiagonals.png");
+    background-repeat: no-repeat;
+    background-position: 7.3em;
+    background-size: 13em;
+}
+.logo { 
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    user-select: none;
+}
+.logo h1 {
+    font-size: 1.125rem;
+    font-weight: 200;
+    margin: 0 1.3rem 0 1rem;
+}
+
+.logo h2 {
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0;  
+}

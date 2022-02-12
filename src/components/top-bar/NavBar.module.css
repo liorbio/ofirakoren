@@ -1,0 +1,38 @@
+:root {
+    --large-screen-margin: 1.9em;
+    --medium-screen-margin: 1.5em;
+    --small-screen-margin: 0.9em;
+}
+
+.navigation {
+    display: flex;
+    align-items: stretch;
+}
+.navigation a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.selected {
+    background-image: url('../../../public/Pink3.png');
+    background-size: 1.4em;
+}
+.navigation h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    margin: auto var(--small-screen-margin);
+}
+
+@media (min-width: 835px) {
+    .navigation h1 {
+        margin: auto var(--medium-screen-margin);
+    }
+}
+@media (min-width: 900px) {
+    .navigation h1 {
+        margin: auto var(--large-screen-margin);
+    }
+}
