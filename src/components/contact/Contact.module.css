@@ -12,3 +12,10 @@
 .content p {
     font-weight: 300;
 }
+.hebrew {
+    font-family: 'Assistant', 'sans-serif';
+    text-align: right;
+}
+svg {
+    font-size: 3.5rem;
+}
