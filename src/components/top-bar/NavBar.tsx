@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import classes from './NavBar.module.css';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 const NavBar: React.FC = () => {
     
@@ -9,6 +11,8 @@ const NavBar: React.FC = () => {
         <NavLink className={(navData) => navData.isActive ? classes.selected : ''} to="/gallery"><h1>GALLERY</h1></NavLink>
         <NavLink className={(navData) => navData.isActive ? classes.selected : ''} to="/workflow"><h1>THE WORKFLOW</h1></NavLink>
         <NavLink className={(navData) => navData.isActive ? classes.selected : ''} to="/contact"><h1>CONTACT</h1></NavLink>
+        <span><InstagramIcon /></span>
+        <span><FacebookIcon /></span>
         </nav>
     )
 };

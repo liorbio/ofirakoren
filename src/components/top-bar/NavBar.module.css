@@ -1,6 +1,6 @@
 :root {
-    --large-screen-margin: 1.9em;
-    --medium-screen-margin: 1.5em;
+    --large-screen-margin: 1.7em;
+    --medium-screen-margin: 1.3em;
     --small-screen-margin: 0.9em;
 }
 
@@ -14,24 +14,37 @@
     text-decoration: none;
     color: black;
 }
+.navigation span {
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+}
+.navigation span:last-child {
+    padding-left: 0;
+}
+.navigation svg {
+    width: 0.9em;
+    height: 0.9em;
+}
 
 .selected {
     background-image: url('../../../public/Pink3.png');
     background-size: 1.4em;
 }
 .navigation h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.04em;
     margin: auto var(--small-screen-margin);
 }
 
-@media (min-width: 835px) {
+@media (min-width: 906px) {
     .navigation h1 {
         margin: auto var(--medium-screen-margin);
+        font-size: 1rem;
     }
 }
-@media (min-width: 900px) {
+@media (min-width: 960px) {
     .navigation h1 {
         margin: auto var(--large-screen-margin);
     }

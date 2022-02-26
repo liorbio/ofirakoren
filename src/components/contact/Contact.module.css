@@ -12,9 +12,9 @@
 .content p {
     font-weight: 300;
 }
-.hebrew {
-    font-family: 'Assistant', 'sans-serif';
-    text-align: right;
+.details {
+    font-family: 'Jost', 'sans-serif';
+    text-align: center;
 }
 svg {
     font-size: 3.5rem;
